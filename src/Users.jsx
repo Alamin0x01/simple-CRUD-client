@@ -15,6 +15,7 @@ const Users = () => {
 
           // const remaining = users.filter((user) => user._id !== _id);
           // setUsers(remaining);
+          //
         }
       });
   };
