@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 
 const Users = () => {
   const users = useLoaderData();
-  const handleDelete = _id => {
+  const handleDelete = (_id) => {
     console.log(_id);
     fetch(`http://localhost:9000/users/${_id}`, {
       method: "DELETE",
@@ -13,10 +13,6 @@ const Users = () => {
         if (data.deletedCount > 0) {
           alert("deleted successfully");
 
-
-
-
-          
           // const remaining = users.filter((user) => user._id !== _id);
           // setUsers(remaining);
         }
